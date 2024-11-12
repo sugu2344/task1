@@ -1,0 +1,108 @@
+:root {
+    --primary: #FA7436;
+    --light: #fff;
+    --dark: #000;
+    --poppins-font: 'Poppins', sans-serif;
+    --volkhov-font: 'Volkhov', serif;
+    --grey: #FA7436;
+    --light-grey: #FEFCFB;
+    --things-color: #F7F8FC;
+}
+
+body {
+    margin: 0;
+    font-family: var(--poppins-font);
+    color: var(--dark);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header Styling */
+header {
+    width: 100%;
+    background: var(--light-grey);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+
+}
+
+.company-name {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.company-name p {
+    font-family: var(--volkhov-font);
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+.company-name img {
+    height: 30px;
+    width: auto;
+}
+
+.nav-links {
+    display: none;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    font-size: 16px;
+    color: var(--dark);
+    font-family: var(--poppins-font);
+}
+
+.login-btns {
+    display: none;
+    gap: 1rem;
+}
+
+.login-btns a {
+    color: var(--primary);
+    font-size: 16px;
+}
+
+.menu-btn {
+    font-size: 1.5rem;
+    color: var(--primary);
+    display: block;
+    cursor: pointer;
+}
+
+.nav-links.show,
+.login-btns.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--light-grey);
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+    }
+
+    .login-btns {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+}
+/* ........................hero section................................ */
