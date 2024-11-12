@@ -19,7 +19,6 @@ a {
     text-decoration: none;
 }
 
-/* Header Styling */
 header {
     width: 100%;
     background: var(--light-grey);
@@ -30,7 +29,6 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
-
 }
 
 .company-name {
@@ -105,4 +103,132 @@ header {
         display: none;
     }
 }
-/* ........................hero section................................ */
+
+.hero {
+    padding: 2rem 0;
+    background-color: var(--light-grey);
+}
+
+.hero-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: var(--volkhov-font);
+    padding: 3rem;
+}
+
+.hero-right {
+    flex: 1;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-left h1 {
+    font-family: var(--volkhov-font);
+    font-size: 64px;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.hero-left p {
+    font-family: var(--poppins-font);
+    font-size: 20px;
+    text-align: left;
+}
+
+.hero-left a {
+    color: var(--primary);
+    padding: 10px;
+    border: 1px solid var(--primary);
+    width: fit-content;
+    margin-top: 2rem;
+}
+
+.hero-dropdown {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--light);
+    padding: 2rem 5rem;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown select {
+    border: none;
+    width: 100%;
+}
+
+.explore-now a {
+    color: var(--primary);
+    padding: 10px;
+    border: 1px solid var(--primary);
+    width: fit-content;
+}
+
+.secondary-text {
+    font-size: 12px;
+    font-family: var(--poppins-font);
+    font-weight: 200;
+    margin-top: 0px;
+}
+
+
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .hero-left {
+        padding: 1rem;
+        order: 1;
+    }
+
+    .hero-left h1 {
+        font-size: 36px;
+    }
+
+    .hero-left p {
+        font-size: 16px;
+    }
+
+    .hero-right {
+        padding: 1rem;
+        order: 2;
+    }
+
+    .hero-right img {
+        padding: 1rem;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .hero-dropdown {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .explore-now {
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
+
+/* things to do */
