@@ -7,6 +7,7 @@
     --grey: #FA7436;
     --light-grey: #FEFCFB;
     --things-color: #F7F8FC;
+    --regular-font: #666666;
 }
 
 body {
@@ -19,6 +20,11 @@ a {
     text-decoration: none;
 }
 
+.heading-text-color {
+    color: var(--primary);
+}
+
+/* header */
 header {
     width: 100%;
     background: var(--light-grey);
@@ -232,3 +238,74 @@ header {
 }
 
 /* things to do */
+.things-to-do {
+    background-color: var(--things-color);
+}
+
+.things-container {
+    display: flex;
+    flex-direction: column;
+}
+.things-container h1 {
+    text-align: center;
+    font-style: var(--volkhov-font);
+    font-size: 48px;
+    font-weight: bold;
+
+}
+.things-container p {
+
+    text-align: center;
+    font-style: var(--poppins-font);
+    font-size: 16px;
+    color: var(--regular-font);
+}
+.things-cardcontainer {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 2rem;
+    gap: 3rem;
+    margin: 0rem 1rem;
+}
+.things-card .cont {
+    font-family: var(--poppins-font);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark);
+}
+.things-card p {
+    font-family: var(--poppins-font);
+    font-size: 16px;
+    color: var(--regular-font)
+}
+
+.things-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    width: 80%;
+    background-color: var(--light);
+    padding: 2rem;
+    align-items: start;
+
+
+}
+.things-card img {
+    width: fit-content;
+}
+
+@media (max-width: 768px) {
+    .things-cardcontainer {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .things-card {
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+/* deals&discounts */
