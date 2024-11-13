@@ -112,7 +112,7 @@ header {
 }
 
 .hero {
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
     background-color: var(--light-grey);
 }
 
@@ -171,6 +171,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--light-grey);
+    padding-bottom: 6rem;
 }
 
 .dropdown select {
@@ -240,6 +242,8 @@ header {
 
 /* things to do */
 .things-to-do {
+    display: flex;
+    flex-direction: column;
     background-color: var(--things-color);
 }
 
@@ -317,7 +321,15 @@ header {
 
 /* deals&discounts */
 .deals-content {
+    display: flex;
+    flex-direction: column;
     background-color: var(--light-grey);
+}
+
+.deals-heading-content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
 }
 
 
@@ -618,3 +630,93 @@ header {
 }
 
 /* ..............................................................subscribe box............................................................................ */
+/* General styles */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.subscribe {
+    text-align: center;
+    padding: 2rem 4rem;
+    width: 40%;
+    background-color: var(--primary);
+    padding: 5rem 5rem;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.input-container input[type="text"] {
+    height: 3rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-container button {
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    right: 8px;
+    height: 75%;
+    padding: 0 1rem;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.input-container button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    .subscribe {
+        width: 80%;
+        padding: 1.5rem 2rem;
+    }
+
+    .subscribe h1 {
+        font-size: 1.5rem;
+    }
+
+    .input-container input[type="text"] {
+        height: 2.5rem;
+    }
+
+    .input-container button {
+        top: 4px;
+        bottom: 4px;
+        right: 4px;
+        height: 85%;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .subscribe {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .subscribe h1 {
+        font-size: 1.2rem;
+    }
+
+    .input-container input[type="text"] {
+        height: 2.5rem;
+    }
+
+    .input-container button {
+        top: 4px;
+        bottom: 4px;
+        right: 4px;
+        height: 85%;
+        font-size: 0.8rem;
+    }
+}
