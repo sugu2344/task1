@@ -346,7 +346,6 @@ header {
     display: flex;
     flex-direction: column;
     width: fit-content;
-    /* padding: 2rem; */
     border: 1px solid var(--regular-font);
     border-radius: 1rem;
     overflow: hidden;
@@ -406,6 +405,29 @@ header {
     gap: 2rem;
 }
 
+.deal-name {
+    font-style: var(--poppins-font);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.deals-card-info-rating p {
+    font-family: var(--poppins-font);
+    font-size: 16px;
+    color: var(--regular-font);
+}
+
+.deals-card-address-location {
+    font-family: var(--poppins-font);
+    font-size: 16px;
+    color: var(--regular-font);
+}
+
+.deals-card-address-amount {
+    font-family: var(--poppins-font);
+    font-size: 16px;
+    font-weight: 200;
+}
 
 
 @media (max-width: 768px) {
@@ -421,3 +443,5 @@ header {
     }
 
 }
+
+/* vacation */
