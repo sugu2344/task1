@@ -601,7 +601,6 @@ header {
 .blog-heading p {
     font-family: var(--volkhov-font);
     font-size: 48px;
-    /* font-weight: bold; */
     font-weight: 200;
     text-align: center;
 }
@@ -616,7 +615,7 @@ header {
 }
 
 .blog-card p {
-    font-size: var(--inter-font);
+    font-family: var(--inter-font);
     font-size: 16px;
     color: #999999;
     margin: 0px;
