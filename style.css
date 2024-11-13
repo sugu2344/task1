@@ -246,6 +246,7 @@ header {
     display: flex;
     flex-direction: column;
 }
+
 .things-container h1 {
     text-align: center;
     font-style: var(--volkhov-font);
@@ -253,6 +254,7 @@ header {
     font-weight: bold;
 
 }
+
 .things-container p {
 
     text-align: center;
@@ -260,6 +262,7 @@ header {
     font-size: 16px;
     color: var(--regular-font);
 }
+
 .things-cardcontainer {
     display: flex;
     flex-direction: row;
@@ -267,12 +270,14 @@ header {
     gap: 3rem;
     margin: 0rem 1rem;
 }
+
 .things-card .cont {
     font-family: var(--poppins-font);
     font-size: 16px;
     font-weight: 600;
     color: var(--dark);
 }
+
 .things-card p {
     font-family: var(--poppins-font);
     font-size: 16px;
@@ -290,6 +295,7 @@ header {
 
 
 }
+
 .things-card img {
     width: fit-content;
 }
@@ -309,3 +315,109 @@ header {
 }
 
 /* deals&discounts */
+.deals-content {
+    background-color: var(--light-grey);
+}
+
+
+.deals-heading-content h1 {
+    text-align: center;
+    font-style: var(--volkhov-font);
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.deals-heading-content p {
+    text-align: center;
+    font-style: var(--poppins-font);
+    font-size: 16px;
+    color: var(--regular-font);
+}
+
+.deals-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3rem 3rem;
+    gap: 1rem;
+}
+
+.deals-card {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    /* padding: 2rem; */
+    border: 1px solid var(--regular-font);
+    border-radius: 1rem;
+    overflow: hidden;
+
+}
+
+.deals-card-content {
+    padding: 0rem 1rem;
+}
+
+/* 1 st line  */
+
+.deals-card-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.deals-card-info-rating {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.deals-card-info-rating img {
+    height: fit-content;
+}
+
+/* 2nd line  */
+.deals-card-address {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+.deals-card-address-location {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.deals-card-address-location img {
+    height: fit-content;
+}
+
+.deals-card-address-amount {
+    display: flex;
+    gap: 1rem;
+}
+
+.car-sliding-arrows {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+
+@media (max-width: 768px) {
+    .deals-card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .car-sliding-arrows {
+        display: none;
+    }
+
+}
