@@ -445,3 +445,120 @@ header {
 }
 
 /* vacation */
+.vacation-sliding-arrows {
+    display: flex;
+    justify-content: right;
+    margin-right: 15rem;
+    gap: 2rem;
+
+
+}
+
+.vacation-card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-left: 2rem;
+    justify-content: center;
+    padding: 2rem;
+
+
+}
+
+.vacation-card {
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    border: 1px solid var(--regular-font);
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.vacation-img img {
+    width: 100%;
+}
+
+.vacation-img-content {
+    padding: 0rem 1rem;
+}
+
+
+/* 1 */
+.vacation-cars-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location-name {
+    font-family: var(--poppins-font);
+    font-size: 24px;
+}
+
+.vacation-price {
+    color: var(--primary);
+}
+
+/* 2 */
+.vacation-cars-details-location {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.vacation-cars-details-location-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.vacation-cars-details-location-left p {
+    font-style: var(--poppins-font);
+    font-size: 16px;
+    color: var(--regular-font);
+}
+
+.vacation-cars-details-location-right p {
+    font-style: var(--poppins-font);
+    font-size: 16px;
+    color: var(--regular-font);
+}
+
+.vacation-cars-details-location-left img {
+    height: 20px;
+}
+
+.vacation-cars-details-location-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.vacation-cars-details-location-right img {
+    height: 20px;
+}
+
+.vacation-sliding-arrows {
+    display: flex;
+
+}
+
+@media (max-width: 768px) {
+    .vacation-card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+
+    }
+
+    .vacation-sliding-arrows {
+        display: none;
+    }
+}
