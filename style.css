@@ -8,6 +8,7 @@
     --light-grey: #FEFCFB;
     --things-color: #F7F8FC;
     --regular-font: #666666;
+    --inter-font: "Inter", sans-serif;
 }
 
 body {
@@ -566,3 +567,54 @@ header {
 /* people says */
 
 /* .........................................latest blog.................................................. */
+.blog-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 3rem;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 50%;
+
+}
+
+.blog-heading p {
+    font-family: var(--volkhov-font);
+    font-size: 48px;
+    /* font-weight: bold; */
+    font-weight: 200;
+    text-align: center;
+}
+
+.blog-card h6 {
+    font-family: var(--poppins-font);
+    font-size: 18px;
+    text-align: left;
+    margin: 0;
+    padding: 1rem 0;
+
+}
+
+.blog-card p {
+    font-size: var(--inter-font);
+    font-size: 16px;
+    color: #999999;
+    margin: 0px;
+}
+
+@media (max-width: 768px) {
+    .blog-card-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* ..............................................................subscribe box............................................................................ */
