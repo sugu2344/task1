@@ -9,6 +9,7 @@
     --things-color: #F7F8FC;
     --regular-font: #666666;
     --inter-font: "Inter", sans-serif;
+    --footer-color: #666666;
 }
 
 body {
@@ -630,7 +631,7 @@ header {
 
 /* ..............................................................subscribe box............................................................................ */
 /* General styles */
-section {
+.box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -640,7 +641,7 @@ section {
 .subscribe {
     text-align: center;
     padding: 2rem 4rem;
-    width: 50%;
+    width: 80%;
     background-color: var(--primary);
     padding: 5rem 5rem;
 }
@@ -729,5 +730,151 @@ section {
         right: 20px;
         height: 85%;
         font-size: 0.8rem;
+    }
+}
+
+/* ............................................footer....................................................................... */
+.footer {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-container-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-company-description-logoname {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer-company-description-logoname img {
+
+    height: 30px;
+    width: fit-content;
+
+}
+
+.footer-company-description-logoname p {
+    font-family: var(--volkhov-font);
+    font-size: 24px;
+}
+
+.footer-color-description {
+    font-family: var(--poppins-font);
+    font-size: 16px;
+    color: var(--footer-color)
+}
+
+.footer-company-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-company-query p {
+    font-style: var(--poppins-font);
+    font-size: 18px;
+    color: var(--footer-color);
+}
+
+.footer-social-icons {
+    padding-left: 10px;
+
+}
+
+.footer-social-icons i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #555;
+}
+
+.footer-container-right {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-company {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.footer-company-query p {
+    margin: 5px 0;
+}
+
+.footer-company-content {
+
+    font-family: var(--poppins-font);
+    font-size: 18px;
+    padding-bottom: 1rem;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-company-description {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0rem;
+    }
+
+    .footer-container-right {
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
+
+    }
+
+    .footer-company-content {
+        font-family: var(--poppins-font);
+        font-size: 18px;
+        color: #000;
+
+    }
+}
+
+/* ..............copywrites................................ */
+.horizontal-line {
+    width: 80%;
+}
+
+.copywrites-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.copywrites-content p {
+    font-family: var(--poppins-font);
+    font-size: 16px;
+    color: var(--footer-color);
+
+}
+
+@media (max-width: 768px) {
+    .copywrites-content {
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
     }
 }
