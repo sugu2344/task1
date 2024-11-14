@@ -127,6 +127,12 @@ header {
     gap: 2rem;
 }
 
+.discover-hover:hover {
+    background-color: var(--primary);
+    color: var(--light);
+
+}
+
 .hero-left {
     flex: 1;
     display: flex;
