@@ -545,6 +545,7 @@ header {
 /* vacation */
 .vatation-content {
     position: relative;
+    background-color: var(--light-grey);
 }
 
 .vacation-sliding-arrows {
@@ -954,6 +955,7 @@ header {
 .footer {
     width: 100%;
     padding: 20px 0;
+    background-color: var(--light-grey);
 }
 
 .footer-container {
@@ -1083,6 +1085,10 @@ header {
 }
 
 /* ..............copywrites................................ */
+.copywrites {
+    background-color: var(--light-grey);
+}
+
 .horizontal-line {
     width: 80%;
 }
