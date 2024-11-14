@@ -314,6 +314,13 @@ header {
 .things-container {
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.flight {
+    position: absolute;
+    top: 20px;
+    right: 120px;
 }
 
 .things-container h1 {
@@ -379,6 +386,10 @@ header {
     .things-card {
         display: flex;
         align-items: center;
+    }
+
+    .flight {
+        display: none;
     }
 
 }
