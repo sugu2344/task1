@@ -130,7 +130,6 @@ header {
 .discover-hover:hover {
     background-color: var(--primary);
     color: var(--light);
-
 }
 
 .hero-left {
