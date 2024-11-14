@@ -601,6 +601,7 @@ header {
     width: 50%;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .peoples-container-right-card {
@@ -615,6 +616,45 @@ header {
     justify-content: start;
 
 }
+
+.peoples-container-left-heading {
+    font-style: var(--volkhov-font);
+    font-size: 48px;
+}
+
+.people-font-roboto {
+    font-style: var(--roboto-font);
+    font-size: 16px;
+    color: var(--footer-color);
+}
+
+.people-text {
+    font-family: var(--poppins-font);
+    font-size: 16px;
+}
+
+.peoples-container-right-namecard h6 {
+    font-family: var(--poppins-font);
+    font-size: 18px;
+    color: #222222;
+    margin: 0px;
+}
+
+.peoples-container-right-namecard p {
+    font-family: var(--poppins-font);
+    font-size: 14px;
+    color: var(--footer-color);
+    padding: 1rem 0rem;
+    margin: 0px;
+}
+
+.peoples-container-right-content-img img {
+    position: absolute;
+    top: -13px;
+    left: -35px;
+
+}
+
 /* .peoples-background {
 
 } */
