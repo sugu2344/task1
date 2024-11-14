@@ -533,6 +533,10 @@ header {
 }
 
 /* vacation */
+.vatation-content {
+    position: relative;
+}
+
 .vacation-sliding-arrows {
     display: flex;
     justify-content: right;
@@ -540,6 +544,12 @@ header {
     gap: 2rem;
 
 
+}
+
+.coconut {
+    position: absolute;
+    top: 80px;
+    right: 300px;
 }
 
 .vacation-card-container {
@@ -647,6 +657,10 @@ header {
     }
 
     .vacation-sliding-arrows {
+        display: none;
+    }
+
+    .coconut {
         display: none;
     }
 }
