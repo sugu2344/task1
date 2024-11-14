@@ -675,6 +675,13 @@ header {
     width: 100%;
     display: flex;
     flex-direction: row;
+    position: relative;
+}
+
+.threeflight {
+    position: absolute;
+    top: -16px;
+    right: 20px;
 }
 
 
@@ -759,6 +766,10 @@ header {
         display: flex;
         flex-direction: column;
 
+    }
+
+    .threeflight {
+        display: none;
     }
 
     .peoples-container-left {
