@@ -10,6 +10,7 @@
     --regular-font: #666666;
     --inter-font: "Inter", sans-serif;
     --footer-color: #666666;
+    --roboto-font: "Roboto", sans-serif;
 }
 
 body {
@@ -577,7 +578,75 @@ header {
     }
 }
 
-/* people says */
+/* .................................people says................ */
+.peoples {
+    background-color: var(--light-grey);
+    padding: 3rem;
+}
+
+.peoples-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.peoples-container-left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.peoples-container-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.peoples-container-right-card {
+    background-color: var(--light);
+    padding: 2rem;
+    width: 60%;
+}
+
+.peoples-container-left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+}
+/* .peoples-background {
+
+} */
+
+@media (max-width: 768px) {
+    .peoples-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .peoples-container-right-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .peoples-container-left {
+        width: 100%;
+    }
+
+    .peoples-container-left-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+}
+
 
 /* .........................................latest blog.................................................. */
 .blog-card-container {
@@ -680,7 +749,7 @@ header {
 }
 
 @media (max-width: 768px) {
-    section {
+    .box {
         padding: 2rem
     }
 
@@ -707,7 +776,7 @@ header {
 }
 
 @media (max-width: 480px) {
-    section {
+    .box {
         padding: 2rem;
     }
 
@@ -822,7 +891,7 @@ header {
 
     font-family: var(--poppins-font);
     font-size: 18px;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
     color: #000;
 }
 
@@ -849,7 +918,8 @@ header {
     .footer-company-content {
         font-family: var(--poppins-font);
         font-size: 18px;
-        color: #000;
+        margin: 0;
+        padding-bottom: 1rem;
 
     }
 }
